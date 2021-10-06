@@ -18,7 +18,7 @@
     <div class="row">
       <!--sidebar start-->
       <div class="col-lg-2 sidebar">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg position-fixed">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,19 +27,30 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav flex-sm-column">
                 <li class="nav-item">
+
+                  <span class="icon-dashboard"></span>
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
+                  <span class="icon-clock"></span>
                   <a class="nav-link" href="#">Time Managment</a>
                 </li>
                 <li class="nav-item">
+                  <span class="icon-box"></span>
                   <a class="nav-link" href="#">Inbox</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Calendar</a>
-                <li class="nav-item">
-                  <a class="nav-link">Settings</a>
+                  <span class="icon-activity"></span>
+                  <a class="nav-link">Activity</a>
                 </li>
+                <li class="nav-item">
+                  <span class="icon-calendar"></span>
+                  <a class="nav-link">Calendar</a>
+                </li>
+                <li class="nav-item">    
+                 <span class="icon-cogwheel"></span>
+                  <a class="nav-link">Settings</a>
+                    </li>
               </ul>
             </div>
           </div>
@@ -50,14 +61,14 @@
 
         <div class="top-bar d-flex justify-content-between align-items-center">
           <div class="search">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1"><span class="icon-search"></span></button>
             <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
               aria-describedby="button-addon1">
           </div>
 <div class="action-group d-flex justify-content-end align-items-center">
           <div class="notify">
             <button type="button" class="btn btn-primary position-relative">
-              @
+              <span class="icon-notification"></span>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
                 9
               </span>
@@ -90,9 +101,108 @@
              </div>
              <div class="tool-body">
               <canvas id="myChart" width="400" height="400"></canvas>
+              
             </div>
          </section>
-      
+         <section>
+           <div class=heading>
+<h2> Crunch some numbers see how</h2>
+<p> see how your project are progressing</p>
+           </div>
+           <div class="d-flex flex-wrap justify-content-between">
+            <div class="col-md-4">
+              <div class="tool-body">
+                <div class="d-flex">
+                  <div class="col-6">
+                    <h3>96</h3>
+                    <p>Working hours</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="color-pickers">
+                    <div class="color-picker-blue">
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                                         </div>
+                    <div class="color-picker-green">
+                      <div class="pick"></div>
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                    </div>
+                    <div class="color-picker-purple">
+                      <div class="pick"></div>
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                       <div class="pick"></div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="col-6">
+                       <h3>1204</h3>
+                    <p>Conversations</p></div>
+                  <div class="col-6"></div>
+                </div>
+                <div class="d-flex">
+                  <div class="col-6">
+                    <h3>7</h3>
+                    <p>People</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="circle-grey">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-7">
+              <div class="tool-body">
+                <canvas id="myChart2" width="400" height="400"></canvas>
+              </div>
+             </div>
+           </div>
+         </section>
+         <section>
+          <div class=heading>
+            <h2> Curent progress</h2>
+            <p> see how your project are progressing</p>
+                       </div> 
+          <div class="tool-body d-flex">
+               <div class="col">
+                <img src="./img/profile.jpg" class="customer-avatar" alt="customer-avatar">
+               </div>
+               <div class="col">
+                 <h4>Project title</h4>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nat </p>
+               </div>
+               <div class="col">
+                 <p>Lorem ipsum dolor sit amet consectetum cupiditate, tempora, numqu</p>
+               </div>
+               <div class="col d-flex justify-content-between align-items-center">
+                 <span class="icon-clock"></span>
+                 <p class="m-0">20:57</p>
+                 <span class="icon-dialog"></span>
+                 <p class="m-0">15:00</p>
+                   </div>
+               <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+               </div>
+            </div>
+         </section>
+      </div>
       </div>
      </div>
   </div>
